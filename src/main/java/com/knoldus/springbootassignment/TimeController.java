@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-public class Controller {
+public class TimeController {
   /**
    * This method will give the current time on calling /status API>
    * @return Current Time

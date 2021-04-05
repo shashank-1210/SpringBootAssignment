@@ -13,13 +13,13 @@ public class ControllerTest {
   @Test
   public void getCurrentTime() {
 
-	Controller c = new Controller();
+	TimeController obj = new TimeController();
 	Calendar cal = Calendar.getInstance();
 	Date date = cal.getTime();
 	DateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 	String result = "Running,{" + dateFormat.format(date) + '}';
 
-	Assert.assertEquals(result, c.getCurrentTime());
+	Assert.assertEquals(result, obj.getCurrentTime());
 
   }
 }
